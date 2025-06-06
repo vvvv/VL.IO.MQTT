@@ -2554,5 +2554,4 @@
   <PlatformDependency Id="FYi9hSsHZ1HNFNIYIJ4nRf" Location="./lib/net8.0/VL.IO.MQTT.dll" />
   <PlatformDependency Id="THj1ARSBiFZQQqaALWDloZ" Location="System.Memory" />
   <NugetDependency Id="Pnu0wsjhpc4NgdcmqGLHwk" Location="MQTTnet.Server" Version="5.0.1.1416" />
-  <NugetDependency Id="R59EmszEmv3P80Fk7NHA7d" Location="WatsonWebsocket" Version="4.1.2" />
 </Document>
