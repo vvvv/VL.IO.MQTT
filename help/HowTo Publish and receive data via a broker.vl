@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="RhwGtTtqbOcMnUUBRrmWQi" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="RhwGtTtqbOcMnUUBRrmWQi" LanguageVersion="2025.7.0-0369-g117540fa59" Version="0.128">
+  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2025.7.0-0369-g117540fa59" />
   <Patch Id="A8Lw1Itg23GNlwVmJzfWih">
     <Canvas Id="VBK5MeZr5m4OVcxFNC3seY" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       </p:NodeReference>
       <Patch Id="LiOklBZWLEfM2Oxd5FTAWo">
         <Canvas Id="EWkfMdFOFOVLVPLsdOflBE" CanvasType="Group">
-          <Node Bounds="125,653,105,26" Id="GfzYQdvLOQ5OyqkDmAUoHc">
+          <Node Bounds="125,668,105,26" Id="GfzYQdvLOQ5OyqkDmAUoHc">
             <p:NodeReference LastCategoryFullName="IO.MQTT.MQTTClient" LastDependency="VL.IO.MQTT.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="MQTT" />
@@ -27,6 +27,7 @@
             <Pin Id="L3Nvra7xU9MQKc9lDvpvlP" Name="Payload" Kind="InputPin" />
             <Pin Id="Swq2FhQCrSwQQ3LeT42NqS" Name="Encoding" Kind="InputPin" />
             <Pin Id="I6xP9l8F1XxM3ewejj17TV" Name="Retain" Kind="InputPin" />
+            <Pin Id="Uc5tF3cVQU7Pv9iCBAGyRv" Name="Message Expiry Interval" Kind="InputPin" IsHidden="true" />
             <Pin Id="SqkQNJfBDAtN0SzUOFGPYr" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
             <Pin Id="HF4vRNocaM9NoCPKQAN1hn" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
             <Pin Id="RqWS4PxjyFwLAKfZIB54xn" Name="Output" Kind="OutputPin" />
@@ -95,7 +96,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="OTlPgLnYahYPyZKDRKxHy7" Comment="On Data" Bounds="695,697,45,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="HYkOX0UafAeM34RpqZs3le" Comment="Password" Bounds="167,191,109,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="HYkOX0UafAeM34RpqZs3le" Comment="Password" Bounds="167,191,109,15" ShowValueBox="true" isIOBox="true" Value="public">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -238,7 +239,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="125,700,85,26" Id="HycJQf6AtiQOeijL15RK24">
+          <Node Bounds="125,745,85,26" Id="HycJQf6AtiQOeijL15RK24">
             <p:NodeReference LastCategoryFullName="IO.MQTT.MQTTClient" LastDependency="VL.IO.MQTT.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="PublishData" />
@@ -248,6 +249,7 @@
             <Pin Id="GDwFbFpEvOfMZd7Qyb5RD6" Name="Topic" Kind="InputPin" />
             <Pin Id="I1qChGMLeYYQDLfoX3TFXx" Name="Payload" Kind="InputPin" />
             <Pin Id="RsLI4hyEZhFNI6YOThDcfy" Name="Retain" Kind="InputPin" />
+            <Pin Id="JopU7KB8tL6MmsAHw4iESd" Name="Message Expiry Interval" Kind="InputPin" IsHidden="true" />
             <Pin Id="Rw8QvTcfKQTLWnjUDmnPBm" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
             <Pin Id="JCkhCd26ZYjM2jAj31QCFs" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
             <Pin Id="QAWtFJUHm96NLSnetlEyVz" Name="Output" Kind="StateOutputPin" />
@@ -268,7 +270,7 @@
             <Pin Id="Q91Sqrl3HBuNK2LEdXEvSc" Name="Result" Kind="OutputPin" />
             <Pin Id="G76mx5ngcNeM3PhepSKYL9" Name="On Data" Kind="OutputPin" />
           </Node>
-          <Pad Id="A1eSV9JfS9APwcDpBbbjCG" Bounds="242,711,173,21" ShowValueBox="true" isIOBox="true" Value="&lt; For publishing raw bytes">
+          <Pad Id="A1eSV9JfS9APwcDpBbbjCG" Bounds="287,756,173,21" ShowValueBox="true" isIOBox="true" Value="&lt; For publishing raw bytes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -277,7 +279,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="QZnZztdeWWWN5eNM9x1KAd" Bounds="242,665,153,19" ShowValueBox="true" isIOBox="true" Value="&lt; For publishing strings">
+          <Pad Id="QZnZztdeWWWN5eNM9x1KAd" Bounds="287,678,153,19" ShowValueBox="true" isIOBox="true" Value="&lt; For publishing strings">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -336,7 +338,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="113,758,129,80" Id="LG9a2fWzTjVMBi9lO7hcG9">
+          <Node Bounds="113,802,149,80" Id="LG9a2fWzTjVMBi9lO7hcG9">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Control" />
@@ -346,7 +348,7 @@
               <Patch Id="OuSE2gDFSe3PI7uVEpIIyX" Name="Create" ManuallySortedPins="true" />
               <Patch Id="B3sGRogbQKsOqM7XRhZScQ" Name="Update" ManuallySortedPins="true" />
               <Patch Id="FJOiTNKKgBULSr2DDsRrug" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="125,786,105,26" Id="ApQ5jLFpB3RLvbZzQug3rw">
+              <Node Bounds="125,831,125,26" Id="ApQ5jLFpB3RLvbZzQug3rw">
                 <p:NodeReference LastCategoryFullName="IO.MQTT.MQTTClient" LastDependency="VL.IO.MQTT.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="PublishAsync" />
@@ -358,13 +360,14 @@
                 <Pin Id="Of4yzTVRMtRNtxF8T2JFDV" Name="Retain" Kind="InputPin" />
                 <Pin Id="Pk92dio2i1eP1tU4XAsSP1" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="Vp3UIgkrSVGPkPUYV3i2c9" Name="Result" Kind="OutputPin" />
+                <Pin Id="Pr9246lNmUxM8e56oyq69L" Name="Message Expiry Interval" Kind="InputPin" />
                 <Pin Id="JOkXwosmOY0QPg03tO5YFv" Name="Quality Of Service Level" Kind="InputPin" />
                 <Pin Id="C0yF87QV9cYPlswU2Xr1HN" Name="Cancellation Token" Kind="InputPin" />
               </Node>
             </Patch>
             <Pin Id="AgIzTDFJnTtMFDg9lRravU" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="QV60wAcuFUKMDlUc3mXWVS" Bounds="242,800,227,19" ShowValueBox="true" isIOBox="true" Value="&lt; For dealing with the returned Task">
+          <Pad Id="QV60wAcuFUKMDlUc3mXWVS" Bounds="242,845,227,19" ShowValueBox="true" isIOBox="true" Value="&lt; For dealing with the returned Task">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -383,7 +386,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="594,890,128,80" Id="StfdFTN8W8cLHFQE837paw">
+          <Node Bounds="594,889,128,80" Id="StfdFTN8W8cLHFQE837paw">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Control" />
@@ -407,7 +410,7 @@
             </Patch>
             <Pin Id="DjHAEmBAdjKPA4h3haxvOp" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="IIr8T2fnpk3Ow8d68MpY5q" Bounds="289,584,199,78" ShowValueBox="true" isIOBox="true" Value="&lt; In order to clear a retained message, send a message to the topic with the &quot;Retain&quot; flag on and an empty payload!">
+          <Pad Id="IIr8T2fnpk3Ow8d68MpY5q" Bounds="306,583,199,78" ShowValueBox="true" isIOBox="true" Value="&lt; In order to clear a retained message, send a message to the topic with the &quot;Retain&quot; flag on and an empty payload!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -424,6 +427,14 @@
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qv0uF16gLoyQErnfAK0RwC" Comment="Apply" Bounds="227,630,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
@@ -454,6 +465,7 @@
         <Link Id="C9DRGcxMBEiL8ZNKeNgx5y" Ids="QAWtFJUHm96NLSnetlEyVz,MyCskm7fWpHOCa9yc1ugbB" />
         <Link Id="EWJbTnLtGznNgkkEu9BHYU" Ids="LhDxFxv8t1RMJtQF8Fv6Va,HyoBSUChmZDN65vtFyCT7w" />
         <Link Id="AHsKMXUW3byOgskYVCAM6W" Ids="O9melNITulWLQSyTvR4mDI,NcNSWiXrUjtPB89NW1fJCF" />
+        <Link Id="AcRUJUfsYO7PcFZa5LZU1m" Ids="Qv0uF16gLoyQErnfAK0RwC,ImNC03buAcfQXOTemAolrS" />
       </Patch>
     </Node>
   </Patch>
