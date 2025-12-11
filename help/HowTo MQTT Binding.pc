@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PublicChannels>
+  <Channel Name="bla" Type="String [Primitive]" />
+  <Channel Name="foo" Type="String [Primitive]" />
+  <Channel Name="foo/bar" Type="String [Primitive]" />
+  <Channel Name="homeassistant/light/wledc3/set" Type="String [Primitive]" />
+  <Channel Name="homeassistant/light/wledc3/state" Type="String [Primitive]" />
+  <Channel Name="homeassistant/media_player/xiaocam03_speaker_media_player/set" Type="String [Primitive]" />
+  <Channel Name="homeassistant/media_player/xiaocam03_speaker_media_player/state" Type="String [Primitive]" />
+  <Channel Name="homeassistant/switch" Type="String [Primitive]" />
+  <Channel Name="homeassistant/switch/blitzwolfplug02" Type="String [Primitive]" />
+  <Channel Name="homeassistant/switch/blitzwolfplug02/set" Type="String [Primitive]" />
+  <Channel Name="homeassistant/switch/blitzwolfplug02/state" Type="String [Primitive]" />
+  <Channel Name="homeassistant/switch/xiaocam03_ring_timer/set" Type="String [Primitive]" />
+</PublicChannels>
