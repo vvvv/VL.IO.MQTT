@@ -3,11 +3,12 @@
 <ChannelBrowserState Bezier_Handles_Visible="True" Current_View=" " Transition_Duration="2">
   <Main_Panel_Channels_Collapsed />
   <Main_Panel_Channels_Opened>
+    <Item>homeassistant/switch/blitzwolfplug02</Item>
     <Item>homeassistant/media_player/xiaocam03_speaker_media_player</Item>
     <Item>homeassistant/light/wledc3</Item>
-    <Item>homeassistant/switch/xiaocam3_ring_timer</Item>
-    <Item>homeassistant/switch/blitzwolfplug02</Item>
+    <Item>homeassistant/switch/xiaocam03_ring_timer</Item>
     <Item>homeassistant/switch/xiaocam_ring_timer</Item>
+    <Item>homeassistant/switch/xiaocam3_ring_timer</Item>
   </Main_Panel_Channels_Opened>
   <Views>
     <Item Key=" ">

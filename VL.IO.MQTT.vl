@@ -2706,7 +2706,7 @@
           <ProcessDefinition Id="Oaw8lhADBJVLaTkqvLUV3E" IsHidden="true" />
         </Patch>
       </Node>
-      <Canvas Id="H8lB6BYwo5BLG9SmCOneTC" Name="MQTT" Position="565,400" CanvasType="Group">
+      <Canvas Id="H8lB6BYwo5BLG9SmCOneTC" Name="MQTT2" Position="500,380" CanvasType="Group">
         <!--
 
     ************************ MQTT ************************
@@ -2920,18 +2920,18 @@
               <ControlPoint Id="DoCMEuBkraeN6sAr4sjgnT" Bounds="1835,990" />
               <Pad Id="P1kpXAXI5UdQCLSCjVQpIL" SlotId="PajcSWDHc6WOwLyFQitPbM" Bounds="1835,940" />
               <ControlPoint Id="SKQejxy5pPCMMDvfQ0wjlf" Bounds="1835,880" />
-              <Pad Id="UAqJSCB5YHvLs8Vjdq9108" Comment="Interface Version" Bounds="2888,410,35,15" ShowValueBox="true" isIOBox="true" Value="2">
+              <Pad Id="UAqJSCB5YHvLs8Vjdq9108" Comment="Interface Version" Bounds="2886,271,35,15" ShowValueBox="true" isIOBox="true" Value="2">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pad>
-              <ControlPoint Id="RPn9sjXAKfMPXM3JtBbFUK" Bounds="2888,450" />
-              <ControlPoint Id="BBkYFIOyKroMBASEMCcL4K" Bounds="130,580" />
+              <ControlPoint Id="RPn9sjXAKfMPXM3JtBbFUK" Bounds="2886,311" />
+              <ControlPoint Id="BBkYFIOyKroMBASEMCcL4K" Bounds="130,610" />
               <Pad Id="RYXfCGc8bTcOhfMylLHYUC" SlotId="B0tQxYmoLPeQJuOZAEjPiL" Bounds="759,181" />
               <ControlPoint Id="HnOxSAYqFMfM88bPGOLDsE" Bounds="759,211" />
               <ControlPoint Id="EkX7Tp52nCqMYLWnANgW87" Bounds="759,141" />
-              <ControlPoint Id="BxdnyHDs3rWNTfdHZwmDMe" Bounds="170,121" />
-              <ControlPoint Id="KYYwK0AxdJvMf9Tm8A6lg5" Bounds="228,121" />
+              <ControlPoint Id="BxdnyHDs3rWNTfdHZwmDMe" Bounds="170,120" />
+              <ControlPoint Id="KYYwK0AxdJvMf9Tm8A6lg5" Bounds="228,120" />
               <ControlPoint Id="GMleTSJpcdINNDPVev75rd" Bounds="519,120" />
               <Pad Id="OFehKgAQdqrMa4Q2nGUG8W" Bounds="130,550" />
               <Pad Id="QzYRjbWbA9gQDe9qUAocrp" SlotId="PreOdyMM5tXN7yxW4zDQC2" Bounds="123,170" />
@@ -2952,7 +2952,7 @@
                 <Pin Id="F879WSrAdeeMAgoMS5I7Yj" Name="Value" Kind="OutputPin" />
                 <Pin Id="ISrg1nc40MzNCoy0DthLWF" Name="Author" Kind="InputPin" IsHidden="true" />
               </Node>
-              <Node Bounds="868,350,55,26" Id="JRmUNbSB0zmLSJP2teP0mQ">
+              <Node Bounds="856,350,68,26" Id="JRmUNbSB0zmLSJP2teP0mQ">
                 <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
@@ -3193,8 +3193,8 @@
                 <Pin Id="PZcc9nLAU1YPeMDSV3fzQi" Name="Input 2" Kind="InputPin" />
                 <Pin Id="FoJLmKFTLKxPafZ5ABnN5H" Name="Output" Kind="OutputPin" />
               </Node>
-              <Pad Id="U5BKHU3xnviLvVa9DYReLc" SlotId="RS94wQ7Exk3OhK5UHBrOop" Bounds="600,561" />
-              <ControlPoint Id="Hhde5STma1HLBPHsgYG8M0" Bounds="600,591" />
+              <Pad Id="U5BKHU3xnviLvVa9DYReLc" SlotId="RS94wQ7Exk3OhK5UHBrOop" Bounds="229,556" />
+              <ControlPoint Id="Hhde5STma1HLBPHsgYG8M0" Bounds="229,610" />
               <Pad Id="FU149Bco1wzPY6NT8KLJOi" Comment="Server" Bounds="170,231,179,15" ShowValueBox="true" isIOBox="true">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
@@ -3205,7 +3205,7 @@
                   <Choice Kind="TypeFlag" Name="Integer32" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="HeN9hgFS2YfP59CKD1zPa6" Comment="Client Id" Bounds="443,331,109,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+              <Pad Id="HeN9hgFS2YfP59CKD1zPa6" Comment="Client Id" Bounds="400,331,54,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
@@ -3215,7 +3215,7 @@
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="DT7LOc2NRGVMkEnA4qLIaS" Comment="Is Connected" Bounds="256,491,35,35" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="DT7LOc2NRGVMkEnA4qLIaS" Comment="Is Connected" Bounds="533,541,35,35" ShowValueBox="true" isIOBox="true" />
               <Node Bounds="168,440,293,19" Id="UAyWAK2sJejPUgz8oDZLka">
                 <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3241,8 +3241,8 @@
                 <Pin Id="JAqagDjzcGrNu1bPwoAUpR" Name="Client Id" Kind="OutputPin" />
                 <Pin Id="OTt1ymKkeZIMOguvOdRkkZ" Name="Connection Result" Kind="OutputPin" />
               </Node>
-              <Pad Id="UjSJFXrDz1uOYs9LAFrH2O" Comment="Client Id" Bounds="386,571,59,15" ShowValueBox="true" isIOBox="true" />
-              <Pad Id="JjTN9QcHdGYMk9BwfKr2rZ" Comment="Publish Queue Length" Bounds="272,669,35,15" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="UjSJFXrDz1uOYs9LAFrH2O" Comment="Client Id" Bounds="386,541,59,15" ShowValueBox="true" isIOBox="true" />
+              <Pad Id="JjTN9QcHdGYMk9BwfKr2rZ" Comment="Publish Queue Length" Bounds="314,481,35,15" ShowValueBox="true" isIOBox="true" />
               <Node Bounds="128,510,54,19" Id="B1GoOJwcK4PLvI88PWu2Rf">
                 <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -3258,7 +3258,7 @@
                 <Pin Id="Lw2TCGPkDlzMDigPEdxfqe" Name="Subscribed" Kind="InputPin" />
                 <Pin Id="OD1xmNgwmX9Mx8VV74p7Ic" Name="Result" Kind="OutputPin" />
               </Node>
-              <Pad Id="FX5us0DegxtPnlVFzsuUrt" SlotId="EoYET7sLq1GOK72sapEc0W" Bounds="226,650" />
+              <Pad Id="FX5us0DegxtPnlVFzsuUrt" SlotId="EoYET7sLq1GOK72sapEc0W" Bounds="242,491" />
               <Pad Id="CEXXfBFHMkkQFnnh2eXtVW" Comment="" Bounds="2069,306,113,15" ShowValueBox="true" isIOBox="true" Value="{0}:{1}">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="ImmutableTypeFlag" Name="String" />
@@ -3278,15 +3278,25 @@
               <Pad Id="KRjJrmeFPorNfxfHb4ZLk6" SlotId="PreOdyMM5tXN7yxW4zDQC2" Bounds="2119,360" />
               <ControlPoint Id="SwGszDZ8QIPPRpSQNHbkdH" Bounds="285,141" />
               <ControlPoint Id="P9JC5jKp1VgQCwTOfwo5Gy" Bounds="343,160" />
-              <ControlPoint Id="DqYItlf8pUjL1Q33juH601" Bounds="443,180" />
-              <ControlPoint Id="GKfli5HmQo1QKJFpfddeNB" Bounds="256,560" />
+              <ControlPoint Id="DqYItlf8pUjL1Q33juH601" Bounds="400,180" />
+              <ControlPoint Id="GKfli5HmQo1QKJFpfddeNB" Bounds="533,610" />
+              <ControlPoint Id="QirHjsloTVcNeQRbHGfjDo" Bounds="386,610" />
+              <ControlPoint Id="DpIytSpHsudNiLtBsl9WYH" Bounds="703,610" />
             </Canvas>
             <Patch Id="K5aiibaapblOL19ehj405u" Name="Create" ParticipatingElements="GUZXtP6u9A9QPHUDCYrhIo,U8cnhNe3raKOT6iN3FCuPT,V6dq3BMR1PBNq8ijsFx5fM">
               <Pin Id="PSWulahtOm3LA0m8YHcKlL" Name="Show Binding Column" Kind="InputPin" DefaultValue="True" Visibility="Optional" />
               <Pin Id="TX9Wz0EshsAOX3llGnIM7m" Name="Node Context" Kind="InputPin" Bounds="848,266" Visibility="Hidden" />
               <Pin Id="Rj9RTxtNDwNMXGllYguexI" Name="Model" Kind="InputPin" Bounds="250,221" Visibility="Optional" />
             </Patch>
-            <Patch Id="LNF8TZJJYpZQPvSPCh5CGt" Name="Update" ManuallySortedPins="true">
+            <Patch Id="LNF8TZJJYpZQPvSPCh5CGt" Name="Update" ParticipatingElements="OXZimI9VfyCNVwLEfeyy6V" ManuallySortedPins="true">
+              <Pin Id="OQMH6zgQ2NsMHdtBwjlgIs" Name="Server" Kind="InputPin" Summary="Target Host or IP" />
+              <Pin Id="OgGVjesHnK6OBj6UtPTirv" Name="Server Port" Kind="InputPin" DefaultValue="1883" Summary="Target Port" />
+              <Pin Id="U6hSSWCa3BYL7j6vTs2O4L" Name="Username" Kind="InputPin" />
+              <Pin Id="D8sGGcjPF3xO5VyZVgfO80" Name="Password" Kind="InputPin" />
+              <Pin Id="S2vybVTd012MxkaRoqfzPb" Name="Client Id" Kind="InputPin" />
+              <Pin Id="P9AYERdnNO7NVAmwyi7Jih" Name="Client Id" Kind="OutputPin" />
+              <Pin Id="LHTGjMg0sD5LU0ZY77t6t4" Name="Is Connected" Kind="OutputPin" />
+              <Pin Id="MzxxhkKiIR7QAUzhVpiwGY" Name="Connection Result" Kind="OutputPin" />
               <Pin Id="CCTHFWIyvv2PCbgt5l9RLB" Name="Nickname" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Optional" />
@@ -3297,14 +3307,8 @@
                   </p:TypeArguments>
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="P9E1zt7xSmENUrIJqpikS3" Name="Server Enabled" Kind="InputPin" DefaultValue="True" Summary="Listen to incoming messages" />
-              <Pin Id="OQMH6zgQ2NsMHdtBwjlgIs" Name="Server" Kind="InputPin" Summary="Target Host or IP" />
-              <Pin Id="OgGVjesHnK6OBj6UtPTirv" Name="Server Port" Kind="InputPin" DefaultValue="1883" Summary="Target Port" />
               <Pin Id="ROZADLzQBE3LCOjFI3hpU8" Name="Direction" Kind="InputPin" DefaultValue="SendAndReceive" />
-              <Pin Id="U6hSSWCa3BYL7j6vTs2O4L" Name="Username" Kind="InputPin" />
-              <Pin Id="D8sGGcjPF3xO5VyZVgfO80" Name="Password" Kind="InputPin" />
-              <Pin Id="S2vybVTd012MxkaRoqfzPb" Name="Client Id" Kind="InputPin" />
-              <Pin Id="LHTGjMg0sD5LU0ZY77t6t4" Name="Is Connected" Kind="OutputPin" />
+              <Pin Id="P9E1zt7xSmENUrIJqpikS3" Name="Server Enabled" Kind="InputPin" DefaultValue="True" Summary="Listen to incoming messages" />
             </Patch>
             <ProcessDefinition Id="RXWvqxccptCNEf416UcWIC" HasStateOut="true">
               <Fragment Id="P553F8FQqz2PGPibYZNjgA" Patch="K5aiibaapblOL19ehj405u" Enabled="true" />
@@ -3497,7 +3501,6 @@
             <Link Id="UBuBgVPsudYMMv93mwXUHS" Ids="FU149Bco1wzPY6NT8KLJOi,OlJOiMlFXkPOUIYiNIlQyP" />
             <Link Id="MOf8nEjB5YwQJudhjod0Co" Ids="AvJijsfKHeBM4C1P2kCJH1,QAw33bZ8iNOPXsocBGmbIS" />
             <Link Id="RQowupYhsTnLxxRBWSFswJ" Ids="BC4PWOAxHKEO1WajQeck3e,Dy5isggl532QQxcQy1eMUq" />
-            <Link Id="UvU2AVO3zpJLKeNvNtPoWJ" Ids="Cf42Td7fNReQEVB0ZEGDYK,DT7LOc2NRGVMkEnA4qLIaS" />
             <Link Id="M5wjGROQTXnL3n9Ha270eJ" Ids="JAqagDjzcGrNu1bPwoAUpR,UjSJFXrDz1uOYs9LAFrH2O" />
             <Link Id="AjPZoPBAc2MLDGIy2xMK36" Ids="HeN9hgFS2YfP59CKD1zPa6,CnjSQwIHVn5LHgmOAO9Wbd" />
             <Link Id="NuQVi3qBnH7OCNi5y5Gg5L" Ids="IuzxrfXE2sdOrbaNF9IaTy,JjTN9QcHdGYMk9BwfKr2rZ" />
@@ -3523,6 +3526,11 @@
             <Link Id="FgLp4S0oZr5LIlGaJmP5C9" Ids="S2vybVTd012MxkaRoqfzPb,DqYItlf8pUjL1Q33juH601" IsHidden="true" />
             <Link Id="Ai7wzMsNQKJPItzo115Y6e" Ids="DT7LOc2NRGVMkEnA4qLIaS,GKfli5HmQo1QKJFpfddeNB" />
             <Link Id="VqS16hwZlntLXnJKvn76Ky" Ids="GKfli5HmQo1QKJFpfddeNB,LHTGjMg0sD5LU0ZY77t6t4" IsHidden="true" />
+            <Link Id="PbJhcoqf4iGNzXUlvoGaSd" Ids="UjSJFXrDz1uOYs9LAFrH2O,QirHjsloTVcNeQRbHGfjDo" />
+            <Link Id="SCFYCHMyBnDMYoSNLR4huy" Ids="QirHjsloTVcNeQRbHGfjDo,P9AYERdnNO7NVAmwyi7Jih" IsHidden="true" />
+            <Link Id="OXZimI9VfyCNVwLEfeyy6V" Ids="FX5us0DegxtPnlVFzsuUrt,DT7LOc2NRGVMkEnA4qLIaS" />
+            <Link Id="AL3xprQaVu7Ot9rUqvxR6Z" Ids="OTt1ymKkeZIMOguvOdRkkZ,DpIytSpHsudNiLtBsl9WYH" />
+            <Link Id="JJ6NnPonHzrMdThpQAChf5" Ids="DpIytSpHsudNiLtBsl9WYH,MzxxhkKiIR7QAUzhVpiwGY" IsHidden="true" />
           </Patch>
         </Node>
         <Overlay Id="HWyDl6IkUdSPrUBsMFEv1C" Name="For UI" Bounds="159,239,505,186">
@@ -4470,7 +4478,7 @@
                 <Pin Id="IcarSJni0RXMSpmeqh5oOP" Name="Result" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="DRU4DjQFebVMdT1OP0AFEO" Bounds="836,360" />
-              <Pad Id="GEItkvZ7C1XPubNpOXwn1h" Bounds="836,421">
+              <Pad Id="GEItkvZ7C1XPubNpOXwn1h" Bounds="717,411">
                 <p:TypeAnnotation LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Channel" />
                   <p:TypeArguments>
@@ -4948,6 +4956,15 @@
             </Patch>
           </Node>
         </Canvas>
+        <Pad Id="SnauALKMa1sNjWWSwLR8Y1" Bounds="1032,296,173,19" ShowValueBox="true" isIOBox="true" Value="ToDo: make actually generic">
+          <p:TypeAnnotation>
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
       </Canvas>
     </Canvas>
     <!--
