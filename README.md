@@ -1,15 +1,14 @@
 # VL.IO.MQTT
 MQTT client and broker nodes.  
 
-For an introduction, watch the vvvvTv episode: 📺 [Networking with MQTT](https://youtube.com/live/LZ-y5FOrdh0)
-
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Getting started
 - Install as [described here](https://thegraybook.vvvv.org/reference/hde/managing-nugets.html) via commandline:
 
     `nuget install VL.IO.MQTT`
-  
+
+- Watch: 📺 [Networking with MQTT](https://youtube.com/live/LZ-y5FOrdh0)
 - Requires access to an MQTT broker (see below)
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
@@ -24,4 +23,5 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 
 ## Credits
 Based on [MQTTNet](https://www.nuget.org/packages/MQTTNet/)
+
 
