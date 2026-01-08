@@ -8,7 +8,7 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 
     `nuget install VL.IO.MQTT`
 
-- Watch: 📺 [Networking with MQTT](https://youtube.com/live/LZ-y5FOrdh0)
+- Watch: 📺 [Networking with MQTT](https://www.youtube.com/live/h_TQFUN8EQ0)
 - Requires access to an MQTT broker (see below)
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
 
@@ -23,5 +23,6 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 
 ## Credits
 Based on [MQTTNet](https://www.nuget.org/packages/MQTTNet/)
+
 
 
