@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PublicChannels>
+  <Channel Name="A" Type="String [Primitive]" />
+  <Channel Name="B" Type="String [Primitive]" />
+</PublicChannels>

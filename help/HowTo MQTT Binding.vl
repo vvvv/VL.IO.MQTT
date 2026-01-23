@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="RhwGtTtqbOcMnUUBRrmWQi" LanguageVersion="2025.7.1-0151-g266bd3b9a8" Version="0.128">
+  <NugetDependency Id="GGdvarIkyvWLkjpBypCkU8" Location="VL.CoreLib" Version="2025.7.1-0150-ga3c2d5396b" />
+  <Patch Id="A8Lw1Itg23GNlwVmJzfWih">
+    <Canvas Id="VBK5MeZr5m4OVcxFNC3seY" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="N4HhCQ3Sdo8N7kwHJ7dRWz">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="LiOklBZWLEfM2Oxd5FTAWo">
+        <Canvas Id="EWkfMdFOFOVLVPLsdOflBE" CanvasType="Group">
+          <Node Bounds="215,1088,105,26" Id="GfzYQdvLOQ5OyqkDmAUoHc">
+            <p:NodeReference LastCategoryFullName="IO.MQTT.MQTTClient" LastDependency="VL.IO.MQTT.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="Category" Name="MQTT" />
+              <Choice Kind="OperationCallFlag" Name="PublishString" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="QaHHUDjbNfUMBpUYR6DG9g" Name="Input" Kind="InputPin" />
+            <Pin Id="VToKTu5QpnaNrPXmJXfpwk" Name="Topic" Kind="InputPin" />
+            <Pin Id="L3Nvra7xU9MQKc9lDvpvlP" Name="Payload" Kind="InputPin" />
+            <Pin Id="Swq2FhQCrSwQQ3LeT42NqS" Name="Encoding" Kind="InputPin" />
+            <Pin Id="I6xP9l8F1XxM3ewejj17TV" Name="Retain" Kind="InputPin" />
+            <Pin Id="Uc5tF3cVQU7Pv9iCBAGyRv" Name="Message Expiry Interval" Kind="InputPin" IsHidden="true" />
+            <Pin Id="SqkQNJfBDAtN0SzUOFGPYr" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HF4vRNocaM9NoCPKQAN1hn" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RqWS4PxjyFwLAKfZIB54xn" Name="Output" Kind="OutputPin" />
+            <Pin Id="ImNC03buAcfQXOTemAolrS" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="ElysMm1twBaNQB3DdOXuev" Comment="Server" Bounds="223,150,179,15" ShowValueBox="true" isIOBox="true" Value="public.cloud.shiftr.io">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TqdUVTlHZICP7l3oRlimHa" Comment="Topic" Bounds="237,956,43,15" ShowValueBox="true" isIOBox="true" Value="T">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="O9jJBxCIPjQQcupoVWjwsV" Comment="Message" Bounds="257,980,35,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Aaf4ffqzY1qNvf1UyhpuqP" Comment="Retain" Bounds="297,1006,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QZnZztdeWWWN5eNM9x1KAd" Bounds="377,1098,231,24" ShowValueBox="true" isIOBox="true" Value="&lt; For publishing strings manually">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Qv0uF16gLoyQErnfAK0RwC" Comment="Apply" Bounds="317,1050,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="221,300,145,19" Id="R29KTk26tTnQUSXIbWQE1s">
+            <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MQTT" />
+            </p:NodeReference>
+            <Pin Id="QNP954rekiCMwwVkvQJDuJ" Name="Show Binding Column" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Eq0uyehBqYCOOZKnqh0wiC" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Kl6R0iP2yhFNsXkwoVKVE3" Name="Model" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Bwu7LiAZXLCNASWU1p4RtH" Name="Server" Kind="InputPin" />
+            <Pin Id="SrO4O4GcHqDLNs7GRpSELr" Name="Server Port" Kind="InputPin" DefaultValue="1883" />
+            <Pin Id="C86j5SlSdCfNfqbWY8qX8L" Name="Username" Kind="InputPin" />
+            <Pin Id="O0iCHJ8LsvpPhxnz3IrWpk" Name="Password" Kind="InputPin" />
+            <Pin Id="VLBUlfAlT40Lfv47tPZ73P" Name="Client Id" Kind="InputPin" />
+            <Pin Id="UZAmChAhP0fMYn55njZXhQ" Name="Nickname" Kind="InputPin" />
+            <Pin Id="OMiHygkYKGqOHhd0BwWItE" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="FDqiQcTGNfZLQVLWNwHEQH" Name="Direction" Kind="InputPin" />
+            <Pin Id="EmYX7J39jpmMM4wiaaPdz4" Name="Server Enabled" Kind="InputPin" />
+            <Pin Id="CxHrrIhTm1fQHQqX5PB26f" Name="Client Id" Kind="OutputPin" />
+            <Pin Id="LX6e12vByIhOb1iSjhE6CE" Name="Is Connected" Kind="OutputPin" />
+            <Pin Id="VpMHod9VwGFPlj5M6EBbes" Name="Connection Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RhDx9Ngig8oPPSuyQlqctk" Comment="Server Enabled" Bounds="472,250,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="221,750,75,19" Id="UztPR3Ob6jDOTGsMWo10DB">
+            <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BindToMQTT" />
+            </p:NodeReference>
+            <Pin Id="Lpp3fJpWIyHP7FKukEYizs" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PutVP0z75JaPciifecOzFU" Name="Input" Kind="InputPin" />
+            <Pin Id="J9YgQP6IZ3OPZxiO5jWj96" Name="Channel" Kind="InputPin" />
+            <Pin Id="F1MgJNcPnsdL2ntuHqn3rz" Name="Direction" Kind="InputPin" />
+            <Pin Id="FGKdQO9A9kFLCr8LmPPrpW" Name="Topic" Kind="InputPin" />
+          </Node>
+          <Node Bounds="244,540,80,19" Id="BwZpkI7mXL7NanaPbmSfta">
+            <p:NodeReference LastCategoryFullName="Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PublicChannel" />
+            </p:NodeReference>
+            <Pin Id="MOv3OA5RYULLRErN4Sm0yk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Ph0AIXL5XULM5U1N7jXFmU" Name="Path" Kind="InputPin" />
+            <Pin Id="EOBcqps5zhtPrCZ1U015Q0" Name="Value" Kind="InputPin" />
+            <Pin Id="JVQjcQYR19wOb4M1toe3t1" Name="Path" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Qq29NN1vvXGMbk7lzNNOc8" Name="Output" Kind="OutputPin" />
+            <Pin Id="DeMP6QQMFCeMRQaiu2y7Qp" Name="Value" Kind="OutputPin" />
+            <Pin Id="Pq5LhFiRcVPMi8oRNopfGd" Name="Author" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="TAJ9KAZY7OjPxRxVoYsKtu" Comment="" Bounds="321,575,93,18" ShowValueBox="true" isIOBox="true" Value="text">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Snk5QRN7KHRMvxJyF9EMre" Comment="" Bounds="321,510,91,15" ShowValueBox="true" isIOBox="true" Value="binding is fun">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="150,890,70,26" Id="OyiKgIXKrvfPGcmjVcE7nx">
+            <p:NodeReference LastCategoryFullName="IO.MQTT.MQTT" LastDependency="VL.IO.MQTT.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="IO.MQTT.MQTT" />
+              <Choice Kind="OperationCallFlag" Name="MQTTClient" />
+            </p:NodeReference>
+            <Pin Id="KEjsUSn4pJHOomZsFwZh55" Name="Input" Kind="StateInputPin" />
+            <Pin Id="GPVpR7iuEAiOljYzBR89s1" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="QjFdwPxe9v4PnvpVj4C6Co" Name="MQTTClient" Kind="OutputPin" />
+          </Node>
+          <Pad Id="R1tiwQZD7HzLZf5WQheGQD" Comment="Username" Bounds="263,182,61,15" ShowValueBox="true" isIOBox="true" Value="public">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EIY2w4YS8WZMoaZLHULxrC" Comment="Password" Bounds="283,202,54,15" ShowValueBox="true" isIOBox="true" Value="public">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SVEOQpk8pzONFRCsg76Js2" Comment="Is Connected" Bounds="316,340,38,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="MGGkZgFfFfgMPKUtCoKAk7" Comment="Client Id" Bounds="303,241,56,15" ShowValueBox="true" isIOBox="true" Value="vvvvasd">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="V8pAzVY9yHWNA2EMKqz1ss" Bounds="321,533,135,19" ShowValueBox="true" isIOBox="true" Value="strings for now only">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UzAdBmMBwkaNtcIzDGlmaP" Bounds="364,648,172,59" ShowValueBox="true" isIOBox="true" Value="&lt; when topic is left empty, it will be derived from the public channel name">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="K0sCpMfPlzlMC6O89OkoC0" Bounds="237,896,283,39" ShowValueBox="true" isIOBox="true" Value="&lt; It's still possible to use the internal MQTTClient">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Kss440zsNDONYHgPh1yPOT" Comment="Path" Bounds="246,510,35,15" ShowValueBox="true" isIOBox="true" Value="A">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="572,540,80,19" Id="AobTKvRYL0NOmHujLYzg1x">
+            <p:NodeReference LastCategoryFullName="Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PublicChannel" />
+            </p:NodeReference>
+            <Pin Id="RzoZNaYrIWvOwX50Eaa4aV" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="ErwpONnWmKhNnoP12tgvKg" Name="Path" Kind="InputPin" />
+            <Pin Id="QRUkLVNc6R4LJsOAJZbj1g" Name="Value" Kind="InputPin" />
+            <Pin Id="VaLNy0MsfDsL1wxTdKRqhC" Name="Path" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="EOxSJNk3PMBNPMHVPWYxH4" Name="Output" Kind="OutputPin" />
+            <Pin Id="NYB6JHu91t3NF91nH9zDCg" Name="Value" Kind="OutputPin" />
+            <Pin Id="SZQSSWyxKgEQYJpOp37e7D" Name="Author" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="HQClurX4tNbLyiBpsa03V6" Comment="" Bounds="649,575,93,18" ShowValueBox="true" isIOBox="true" Value="text">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KKIJ5SSnD5AOxeP99A7jqS" Comment="Path" Bounds="574,510,35,15" ShowValueBox="true" isIOBox="true" Value="B">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="549,750,75,19" Id="TGqx4rrqk2mL1uLO5QGG7p">
+            <p:NodeReference LastCategoryFullName="IO.MQTT" LastDependency="VL.IO.MQTT.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="BindToMQTT" />
+            </p:NodeReference>
+            <Pin Id="T8ERBcZ63FxPPOfXXWnSTW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="A4cEroDSLDILo8gnVDfnBh" Name="Input" Kind="InputPin" />
+            <Pin Id="DOVZLBczmzQLXm7i4sYYec" Name="Channel" Kind="InputPin" />
+            <Pin Id="KmTZ6XijST3M4Q8OlOPv1G" Name="Direction" Kind="InputPin" />
+            <Pin Id="Fh5W6mQkaFEP9aLsfm3zL6" Name="Topic" Kind="InputPin" DefaultValue="A" />
+          </Node>
+          <Pad Id="SQixNBADs19MyRebKh9Rg0" Comment="Topic" Bounds="293,651,35,15" ShowValueBox="true" isIOBox="true" Value="T">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="866,540,80,19" Id="CWTH9ZxMD9iPPN5bEOQUVx">
+            <p:NodeReference LastCategoryFullName="Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PublicChannel" />
+            </p:NodeReference>
+            <Pin Id="PHckjZ4FcYPNxfHvyjvpIX" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FnvLyvol9YTMtkV88jEi1w" Name="Path" Kind="InputPin" />
+            <Pin Id="B2aGTGGMkj4NByVQL5ufoZ" Name="Value" Kind="InputPin" />
+            <Pin Id="K1YajxS3q0CQLRQ2dztKnD" Name="Path" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="G1AEoeYMoRvOH1SXC7dKNw" Name="Output" Kind="OutputPin" />
+            <Pin Id="Uqc6ec5fmZDNj2eC2utKLC" Name="Value" Kind="OutputPin" />
+            <Pin Id="V1THIPbhuNiOdkBmyrNSlG" Name="Author" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="HxJXy7SogmSLT8iLks2LqA" Comment="" Bounds="868,522,26,15" ShowValueBox="true" isIOBox="true" Value="A">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CeE52iwRxuhMdUiSXFOIit" Bounds="943,578,35,15" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="866,730,55,26" Id="DjZ1JeWjEtCPHObVYMt2ck">
+            <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetValue" />
+            </p:NodeReference>
+            <Pin Id="Txoy06rkyRNNR5ajINjtSa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="MKDTHTTJXRMNaEhrCRtJCl" Name="Value" Kind="InputPin" DefaultValue="say A" />
+            <Pin Id="GVeAQezmSLbM9YtHZx5CzZ" Name="Author" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HvqRSTjLI8tNhucS2xsaRM" Name="Apply" Kind="InputPin" />
+            <Pin Id="PaFMqZKk6vaMK4dO85fo02" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="SDnwueBU9hlPX65ueMGFFK" Comment="Apply" Bounds="918,691,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LzHkWqlSl8qMgiH7GIfhsB" Bounds="856,448,308,50" ShowValueBox="true" isIOBox="true" Value="You don't need to work with the MQTTClient. &#xD;&#xA;You can focus on your channels.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="1031,540,80,19" Id="CdFO3cLHuYNPLMKHsX1dg3">
+            <p:NodeReference LastCategoryFullName="Application" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="PublicChannel" />
+            </p:NodeReference>
+            <Pin Id="UuiXfMPF6w4MOhPkoEg9H9" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IieZVIp1plAM22X6SSoV2S" Name="Path" Kind="InputPin" />
+            <Pin Id="V6xEmgLZJPdMOuQ8NkEn6a" Name="Value" Kind="InputPin" />
+            <Pin Id="S9iE7qVaaLvODnEsB5M1pA" Name="Path" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="IXohX2Tiug0N0NRcijCYR1" Name="Output" Kind="OutputPin" />
+            <Pin Id="J9rRRazdns9ONQIeufKK37" Name="Value" Kind="OutputPin" />
+            <Pin Id="P0H0w5vbuKqNHCvaNYBwrQ" Name="Author" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="P6dAkW4bREgLaoia0xYGRO" Comment="" Bounds="1033,522,26,15" ShowValueBox="true" isIOBox="true" Value="B">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ICHlkmHuEB7M9IteeTS9PJ" Bounds="1108,578,35,15" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="1031,730,55,26" Id="LtpFb1eHXbdLHGIbxGwLOf">
+            <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="MutableInterfaceType" Name="Channel" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SetValue" />
+            </p:NodeReference>
+            <Pin Id="JEyhOeYEtD4L5jY69yd1Fw" Name="Input" Kind="StateInputPin" />
+            <Pin Id="IrP5exWPqDhML7h70AkrYE" Name="Value" Kind="InputPin" DefaultValue="say B" />
+            <Pin Id="IYOszGXVwXwOWyh3x4TcRO" Name="Author" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Pd9nXYv4VzkQDAUlfW43pt" Name="Apply" Kind="InputPin" />
+            <Pin Id="QBTtyafvN1NPKIVxxrjZa6" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pad Id="NSExvgkcAG2MzWBWYA7qCv" Comment="Apply" Bounds="1083,691,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <ControlPoint Id="Q8gbhv0wAfrMRfFl0FWs2d" Bounds="551,549" />
+          <ControlPoint Id="TTwOUYw5VwUP5IBRm4Dfre" Bounds="152,671" />
+          <ControlPoint Id="AhBCEu2ZVEnMSwKy9obBzK" Bounds="293,720" />
+        </Canvas>
+        <Patch Id="GUsazFg1H4eLoKT3wTx1Gl" Name="Create" />
+        <Patch Id="GtlRcTZ7gYeMKoWQ1coRAa" Name="Update" />
+        <ProcessDefinition Id="RVAKWD0pDIwNGBrAARZxoN">
+          <Fragment Id="Mw4TKHAQL3qMxzjk2HcFKQ" Patch="GUsazFg1H4eLoKT3wTx1Gl" Enabled="true" />
+          <Fragment Id="D1RKrug8fK4LCWWUtuUbNA" Patch="GtlRcTZ7gYeMKoWQ1coRAa" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="SXafWIZs4JGLFugVVwvVD4" Ids="TqdUVTlHZICP7l3oRlimHa,VToKTu5QpnaNrPXmJXfpwk" />
+        <Link Id="CLweDASQ5hAN5XI1ZGW0WZ" Ids="Aaf4ffqzY1qNvf1UyhpuqP,I6xP9l8F1XxM3ewejj17TV" />
+        <Link Id="UwYsKgo6OkrPIHpHlHufHV" Ids="O9jJBxCIPjQQcupoVWjwsV,L3Nvra7xU9MQKc9lDvpvlP" />
+        <Link Id="AcRUJUfsYO7PcFZa5LZU1m" Ids="Qv0uF16gLoyQErnfAK0RwC,ImNC03buAcfQXOTemAolrS" />
+        <Link Id="G5ekqqGdMR6MHY1F2vvYmm" Ids="RhDx9Ngig8oPPSuyQlqctk,EmYX7J39jpmMM4wiaaPdz4" />
+        <Link Id="GzezgexcdxEN6E3Av9VUtP" Ids="DeMP6QQMFCeMRQaiu2y7Qp,TAJ9KAZY7OjPxRxVoYsKtu" />
+        <Link Id="K0aj5ylz6NFOiUbIWp73Og" Ids="Qq29NN1vvXGMbk7lzNNOc8,J9YgQP6IZ3OPZxiO5jWj96" />
+        <Link Id="T0WQuHIm1znP47dPoEVcVz" Ids="Snk5QRN7KHRMvxJyF9EMre,EOBcqps5zhtPrCZ1U015Q0" />
+        <Link Id="UIS5tVct15pPZgGpSGdAfS" Ids="OMiHygkYKGqOHhd0BwWItE,TTwOUYw5VwUP5IBRm4Dfre,KEjsUSn4pJHOomZsFwZh55" />
+        <Link Id="Ng5HMBk6Ly2N8YNJYci7m7" Ids="R1tiwQZD7HzLZf5WQheGQD,C86j5SlSdCfNfqbWY8qX8L" />
+        <Link Id="VynDRXSTKXeOy0YhRQF8Tq" Ids="EIY2w4YS8WZMoaZLHULxrC,O0iCHJ8LsvpPhxnz3IrWpk" />
+        <Link Id="RfkW89XF244MM1YuJaAkO1" Ids="LX6e12vByIhOb1iSjhE6CE,SVEOQpk8pzONFRCsg76Js2" />
+        <Link Id="SyJuvRWh57pNCrLmfXdvsS" Ids="ElysMm1twBaNQB3DdOXuev,Bwu7LiAZXLCNASWU1p4RtH" />
+        <Link Id="DzjNKg2s6OAPAGdw004trH" Ids="MGGkZgFfFfgMPKUtCoKAk7,VLBUlfAlT40Lfv47tPZ73P" />
+        <Link Id="U3ZldF4GgmkLmhsSvh9rDk" Ids="QjFdwPxe9v4PnvpVj4C6Co,QaHHUDjbNfUMBpUYR6DG9g" />
+        <Link Id="DIvJ4zWFC9fOQWs4zahPQ7" Ids="Kss440zsNDONYHgPh1yPOT,Ph0AIXL5XULM5U1N7jXFmU" />
+        <Link Id="UYKOYuIPSsMLeRbImHqmz7" Ids="NYB6JHu91t3NF91nH9zDCg,HQClurX4tNbLyiBpsa03V6" />
+        <Link Id="JWowx7J1ZVCLUv4odS42Ab" Ids="KKIJ5SSnD5AOxeP99A7jqS,ErwpONnWmKhNnoP12tgvKg" />
+        <Link Id="TaryQwSK4z8NyoAiABhOyr" Ids="EOxSJNk3PMBNPMHVPWYxH4,DOVZLBczmzQLXm7i4sYYec" />
+        <Link Id="E45erINdoUoPuBKigVuTe9" Ids="SQixNBADs19MyRebKh9Rg0,FGKdQO9A9kFLCr8LmPPrpW" />
+        <Link Id="N9drpLpYWsaPrv7qvQr1Ai" Ids="SQixNBADs19MyRebKh9Rg0,AhBCEu2ZVEnMSwKy9obBzK,Fh5W6mQkaFEP9aLsfm3zL6" />
+        <Link Id="InH2ORrDIA2Me4eiENLeyP" Ids="OMiHygkYKGqOHhd0BwWItE,PutVP0z75JaPciifecOzFU" />
+        <Link Id="C4Z2m5aNEr7NAVwv3NjQYT" Ids="OMiHygkYKGqOHhd0BwWItE,Q8gbhv0wAfrMRfFl0FWs2d,A4cEroDSLDILo8gnVDfnBh" />
+        <Link Id="BDvAAjfRnwAOrOCV1TsdXJ" Ids="HxJXy7SogmSLT8iLks2LqA,FnvLyvol9YTMtkV88jEi1w" />
+        <Link Id="CGpBYtFYjNsQHRZUxLHd6f" Ids="Uqc6ec5fmZDNj2eC2utKLC,CeE52iwRxuhMdUiSXFOIit" />
+        <Link Id="S3ePMTEMWo5NgQid1DmnPb" Ids="G1AEoeYMoRvOH1SXC7dKNw,Txoy06rkyRNNR5ajINjtSa" />
+        <Link Id="HPuybsdB9ukNzADjuiSflN" Ids="SDnwueBU9hlPX65ueMGFFK,HvqRSTjLI8tNhucS2xsaRM" />
+        <Link Id="Cn8iUldzplcLMJr7XkZxW6" Ids="P6dAkW4bREgLaoia0xYGRO,IieZVIp1plAM22X6SSoV2S" />
+        <Link Id="ODD2aaCjvyrNdnBl1YLAcg" Ids="J9rRRazdns9ONQIeufKK37,ICHlkmHuEB7M9IteeTS9PJ" />
+        <Link Id="Mb2zgfsKdDQOyZEK08Wvh6" Ids="IXohX2Tiug0N0NRcijCYR1,JEyhOeYEtD4L5jY69yd1Fw" />
+        <Link Id="TTOdnaZZFm5Op5JZY9KIAo" Ids="NSExvgkcAG2MzWBWYA7qCv,Pd9nXYv4VzkQDAUlfW43pt" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="FdqdXoNNllPLEAlICNP2OA" Location="VL.IO.MQTT" Version="0.0.0" />
+</Document>
