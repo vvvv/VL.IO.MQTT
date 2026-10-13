@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="CSXWNx0044QM8G6leMQg9d" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="EN3PAppDLmIP371rQaH8FE" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="CSXWNx0044QM8G6leMQg9d" LanguageVersion="2025.7.4" Version="0.128">
+  <NugetDependency Id="EN3PAppDLmIP371rQaH8FE" Location="VL.CoreLib" Version="2025.7.4" />
   <Patch Id="GtfkEhYhnaJOz2zRZJ3xYo">
     <Canvas Id="UPQzunPqOqrMQOyXyXybfM" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -153,17 +153,21 @@
       </p:NodeReference>
       <Patch Id="NXaFcE9UveSObPturasjaV">
         <Canvas Id="DwcgyQSbncXODx4zTGGQbw" CanvasType="Group">
-          <Node Bounds="54,729,145,19" Id="AM9PGqERIbnORJZY06CUsQ">
+          <Node Bounds="54,729,165,19" Id="AM9PGqERIbnORJZY06CUsQ">
             <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="AdCp8d3O6ShPPU7tP1E1t1" Name="Bounds" Kind="InputPin" DefaultValue="1371, 477, 459, 352" IsHidden="true" />
+            <Pin Id="VybCXpIdHxcQL9flZikvlW" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="AdCp8d3O6ShPPU7tP1E1t1" Name="Bounds" Kind="InputPin" DefaultValue="1594, 406, 459, 352" IsHidden="true" />
             <Pin Id="AA9SpqdZikHMGECXqnKjZK" Name="Save Bounds" Kind="InputPin" IsHidden="true" />
             <Pin Id="Hee6YAORBxHOuRf3CGEeCd" Name="Bound to Document" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="VybCXpIdHxcQL9flZikvlW" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="Dg8qFV1L1YGNjWiIZTKBqk" Name="Dialog If Document Changed" Kind="InputPin" IsHidden="true" />
+            <Pin Id="JN8Udf1s8MaL0AWaFSAyW9" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+            <Pin Id="Q7aApMiCetWN84J1JNhCDR" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
             <Pin Id="D6HtdPLbCvpMkSn0J7kyCe" Name="Input" Kind="InputPin" />
+            <Pin Id="QKgahnmJ5xGOAH8RTX1AV8" Name="Title" Kind="InputPin" />
+            <Pin Id="QHFmvSh33OtLZ2v2tr4qyY" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
             <Pin Id="FQ7bIY9wC7hPq30Ks8MYxZ" Name="Color" Kind="InputPin" />
             <Pin Id="DqeISnvuMlHMXTBawEzVit" Name="Clear" Kind="InputPin" />
             <Pin Id="F3bnU9Vz1HxNntF0Z7eAtf" Name="Space" Kind="InputPin" />
@@ -199,6 +203,7 @@
             <Pin Id="QrGrULQc2ZpPjyeqFIh6hM" Name="Is Connected" Kind="OutputPin" />
             <Pin Id="SVpy3UphJmmPc8ASKsrW0D" Name="Publish Queue Length" Kind="OutputPin" />
             <Pin Id="FDHTmp9JXW2NW4LbO2o7l5" Name="Client Id" Kind="OutputPin" />
+            <Pin Id="GJHwYga4x8hPvgdn9Mm8TK" Name="Connection Result" Kind="OutputPin" />
           </Node>
           <Pad Id="CVpu3Zv15GFPaiIGSw5sOQ" Comment="Topic" Bounds="349,296,89,15" ShowValueBox="true" isIOBox="true" Value="vvvv/players/+">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
@@ -206,7 +211,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="PVCvWSNjhunMwqdP3uaFwM" SlotId="THpn1nvKnNAPdnLskBT5Vu" Bounds="208,348" />
-          <Pad Id="HSXFjIZisknLYzfiEjpiTe" Comment="Server" Bounds="324,127,105,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="HSXFjIZisknLYzfiEjpiTe" Comment="Server" Bounds="324,127,105,15" ShowValueBox="true" isIOBox="true" Value="public.cloud.shiftr.io">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -214,7 +219,7 @@
               <p:showvalue p:Type="Boolean">true</p:showvalue>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Tp2SvAj9lPOOR1WpTUV0rp" Comment="Color" Bounds="96,708,20,15" ShowValueBox="true" isIOBox="true" Value="0.29000002, 0.29000002, 0.29000002, 1">
+          <Pad Id="Tp2SvAj9lPOOR1WpTUV0rp" Comment="Color" Bounds="116,701,20,15" ShowValueBox="true" isIOBox="true" Value="0.29000002, 0.29000002, 0.29000002, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
@@ -242,6 +247,7 @@
                 <Pin Id="Q0ZaDXYBRPPMxBXu4sy0U6" Name="Payload" Kind="InputPin" />
                 <Pin Id="LGhMGoJyUWnLIHDRzLaJqf" Name="Encoding" Kind="InputPin" />
                 <Pin Id="B6nIpGFCPRuQaGkHUb27BW" Name="Retain" Kind="InputPin" />
+                <Pin Id="FgyrokEwxDPMer1AKW74dJ" Name="Message Expiry Interval" Kind="InputPin" IsHidden="true" />
                 <Pin Id="ANYaM3bCKabQZKfKTqXsWA" Name="Quality Of Service Level" Kind="InputPin" IsHidden="true" />
                 <Pin Id="UkWXCp4BBtBLgV8JU5QbaQ" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
                 <Pin Id="LSuXCltkIQ1OXIU3kWnaMd" Name="Apply" Kind="InputPin" />
@@ -296,7 +302,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="V487QXfHzNAQdsBch6PTH9" Comment="Login" Bounds="365,148,41,17" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="V487QXfHzNAQdsBch6PTH9" Comment="Login" Bounds="365,148,41,17" ShowValueBox="true" isIOBox="true" Value="public">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -304,7 +310,7 @@
               <p:showvalue p:Type="Boolean">true</p:showvalue>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="AhbxydRHCpVNUPMkxqgaDb" Comment="Passwort" Bounds="385,173,52,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="AhbxydRHCpVNUPMkxqgaDb" Comment="Passwort" Bounds="385,173,52,15" ShowValueBox="true" isIOBox="true" Value="public">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -343,6 +349,7 @@
             <Pin Id="AUw58dDz31bNcIlWiPgLBc" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="A5PyCk6Jpy0QLnMNaynFXz" Name="Messages" Kind="InputPin" />
             <Pin Id="DjdbBeexNgDMPd4HeAEbfq" Name="Reset" Kind="InputPin" />
+            <Pin Id="GofLbR08oVUOkFo3OhTidh" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="VEUZZl6ikhQOGLp68mvOf1" Name="Result" Kind="OutputPin" />
             <Patch Id="P6J1POgCwtzPI9BQBWcJCw" ManuallySortedPins="true">
               <Patch Id="L0uHVBOoHcjMaLD5bQW2JL" Name="Create" ManuallySortedPins="true" />
@@ -421,7 +428,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="PZTae3X1T4DOiDmBx6TLi7" Comment="Client Id" Bounds="405,215,40,15" ShowValueBox="true" isIOBox="true" Value="Server">
+          <Pad Id="PZTae3X1T4DOiDmBx6TLi7" Comment="Client Id" Bounds="405,210,40,15" ShowValueBox="true" isIOBox="true" Value="Server">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -445,6 +452,29 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="VFGtrUeBC8eQSzDUaV1wE6" Bounds="23,124,230,19" ShowValueBox="true" isIOBox="true" Value="Open the corresponding demo client:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FIUtTVejUniLWx8KD9KivR" Comment="Title" Bounds="96,670,35,15" ShowValueBox="true" isIOBox="true" Value="Server">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="TlArK5DO1LvPt3sLGB6zxk" Bounds="23,87,233,19" ShowValueBox="true" isIOBox="true" Value="https://www.youtube.com/watch?v=h_TQFUN8EQ0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="POjsziuRG7JO0PVsqVvQKP" Bounds="23,64,173,19" ShowValueBox="true" isIOBox="true" Value="Watch the demo being built:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -505,11 +535,12 @@
         <Link Id="IgjpqSlcnB4LxidqQac32e" Ids="HSXFjIZisknLYzfiEjpiTe,NzoAVGOJAJINP4fLlXTdTs" />
         <Link Id="CwLX5TL3k7aPPNkD0CQmPu" Ids="V487QXfHzNAQdsBch6PTH9,LBOI5OKQB0OOC32SPGYwwL" />
         <Link Id="MEelTkTVmJ2QEi5EImYhxJ" Ids="AhbxydRHCpVNUPMkxqgaDb,TXpRJunINDwMwMZCKY67d9" />
+        <Link Id="HsNcL5cFJUVPyt20L0FKuu" Ids="FIUtTVejUniLWx8KD9KivR,QKgahnmJ5xGOAH8RTX1AV8" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JyghRf0TYihOosbzqt4T9z" Location="VL.Skia" Version="2024.6.7" />
+  <NugetDependency Id="JyghRf0TYihOosbzqt4T9z" Location="VL.Skia" Version="2025.7.4" />
   <NugetDependency Id="RZifgdpylDfPWMgohmw916" Location="VL.IO.MQTT" Version="1.2.0" />
-  <NugetDependency Id="TLQ6XXkIR6VQIotf69NEqe" Location="VL.Serialization.MessagePack" Version="2024.6.7" />
+  <NugetDependency Id="TLQ6XXkIR6VQIotf69NEqe" Location="VL.Serialization.MessagePack" Version="2025.7.4" />
   <DocumentDependency Id="TkGrVN1KhK2O5gE1JaJU9h" Location="./Demo Core.vl" />
 </Document>
