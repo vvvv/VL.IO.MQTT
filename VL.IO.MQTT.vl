@@ -5136,8 +5136,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Q1pAgT2oSmIQNgtOr5eIT5" Location="MQTTnet" Version="5.0.1.1416" />
+  <NugetDependency Id="Q1pAgT2oSmIQNgtOr5eIT5" Location="MQTTnet" Version="5.2.0.1603" />
   <PlatformDependency Id="FYi9hSsHZ1HNFNIYIJ4nRf" Location="./lib/net8.0/VL.IO.MQTT.dll" />
   <PlatformDependency Id="THj1ARSBiFZQQqaALWDloZ" Location="System.Memory" />
-  <NugetDependency Id="Pnu0wsjhpc4NgdcmqGLHwk" Location="MQTTnet.Server" Version="5.0.1.1416" />
+  <NugetDependency Id="Pnu0wsjhpc4NgdcmqGLHwk" Location="MQTTnet.Server" Version="5.2.0.1603" />
 </Document>

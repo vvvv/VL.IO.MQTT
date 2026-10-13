@@ -23,6 +23,3 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
 
 ## Credits
 Based on [MQTTNet](https://www.nuget.org/packages/MQTTNet/)
-
-
-
