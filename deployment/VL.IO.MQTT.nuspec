@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.MQTT</id>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <title>VL.IO.MQTT</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.MQTT</projectUrl>
     <repository type="git" url="https://github.com/vvvv/VL.IO.MQTT"/>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>An MQTT client for VL</description>
-    <tags>VL, iot</tags>
+    <description>MQTT client and broker for VL</description>
+    <tags>VL, iot, binding, module</tags>
 	<dependencies>
       <dependency id="MQTTNet" version="5.2.0.1603" />
       <dependency id="MQTTNet.Server" version="5.2.0.1603" />
